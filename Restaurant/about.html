@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="swiffy-slider-main/dist/css/swiffy-slider.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <script src="https://kit.fontawesome.com/4938406bb3.js" crossorigin="anonymous"></script>
+    <title>Resto / About</title>
+</head>
+<body>
+    
+    <!-- **** Start Navbar SECTION **** -->
+    <section id="Navbar">
+        <div class="container" id="fixed-nav">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav d-flex align-items-center justify-content-between">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Reservation">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item Logo">
+                          <a class="nav-link" href="index.html"><img class="logo" src="img/logo.png"  alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Team">Team</a>
+                          </li>
+                          <li class="nav-item">
+                              <div class="dropdown show">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Special-Dishes
+                                  </a>
+                                
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#Beef-Steak-Sause">Beef Steak Sause</a>
+                                    <a class="dropdown-item" href="#Salamon-Zucchini">Salamon Zucchini</a>
+                                  </div>
+                                </div>
+                          </li>
+                          <li class="nav-item" id="openbtn">
+                            <a class="nav-link" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+                          </li>
+                      </ul>
+                      <div id="mySidenav" class="sidenav">
+                        <a class="nav-link"  href="javascript:void(0)" style="float: right;" class="closebtn" onclick="closeNav()"><i style="font-size: 20px;" class="fas fa-times"></i></a>
+                        <a class="nav-link" href="index.html"><img class="logo-sidnav" src="img/logo.png"  alt=""></a>
+                        <a class="nav-link"  href="index.html">Home</a>
+                        <a class="nav-link"  href="#About-us">About</a>
+                        <div class="dropdown show">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Special-Dishes
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#Special-Dishes">Beef Steak Sause</a>
+                              <a class="dropdown-item" href="#Salamon-Zucchini">Salamon Zucchini</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" href="#Team">Team</a>
+                        <a class="nav-link" href="#Reservation">Reservation</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- **** End Navbar SECTION **** -->
+
+    <!-- **** Start About SECTION **** -->
+    <div id="header">
+        <section id="About-us">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <img  data-aos="zoom-out-right" data-aos-duration="3000" src="img/food2.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="welcome">
+                            <p class="title">About</p>
+                            <h1>Welcome to Resto</h1>
+                        </div>
+                        <div class="about-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias est dignissimos sequi reprehenderit commodi autem nam labore non impedit, necessitatibus repellendus quis eius dolorem eaque. Eius, est nemo. Quae, enim.</p>
+                        </div>
+                        <div class="special-recipe">
+                            <h2>Special Recipe</h2>
+                            <div class="row">
+                                <div class="col-lg-4  d-flex flex-column justify-content-center align-items-center">
+                                    <img  data-aos="zoom-in" data-aos-duration="1500" class="About-us-img" src="img/Special Fried Rice.png" alt="">
+                                    <a href="#">Fried Rice</a>
+                                </div>
+                                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                                    <img  data-aos="zoom-in" data-aos-duration="1500" class="About-us-img" src="img/Special-Barbecue-Chicken.jpg" alt="">
+                                    <a href="#">Barbecue Chicken</a>
+                                </div>
+                                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                                    <img  data-aos="zoom-in" data-aos-duration="1500" class="About-us-img" src="img/Special-Slow-Cooked-Beef.jpg" alt="">
+                                    <a href="#">Slow Cooked Beef</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- **** End About SECTION **** -->
+
+    <!-- **** Start Footer SECTION **** -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 p-5">
+                    <h2>Resto</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. omnis cumque dolor natus blanditiis, modi eius aperiam quas officiis ratione temporibus? Obcaecati.</p>
+                    <div class="social-media">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5">
+                    <h2>Open Hour's</h2>
+                    <ul>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Monday</span>
+                            <span>9:00 - 24:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Tuesday</span>
+                            <span>9:00 - 24:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Wednesday</span>
+                            <span>9:00 - 24:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Thursday</span>
+                            <span>9:00 - 24:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Friday</span>
+                            <span>9:00 - 02:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Saturday</span>
+                            <span>9:00 - 02:00</span>
+                        </li>
+                        <li class=" d-flex align-items-center justify-content-between">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 p-5">
+                    <h2>Newsleter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                    </div>
+                    <button type="submit" class="menu">Submet</button>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <p class="copy-right">Copyright <span>Abdullah Abu-Khalaf </span>@2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- **** End Footer SECTION **** -->
+</body>
+
+
+<!--Script-->
+<script src="vanilla-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="slider-show-master/slidershow/src/js/slider.js"></script>
+<script src="swiffy-slider-main/dist/js/swiffy-slider.min.js"></script>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

@@ -1,0 +1,129 @@
+#Navbar{
+    position: sticky !important;
+    margin-bottom: 0px !important;
+    width: 95%;
+    margin: auto;
+}
+
+
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.Menu{
+    padding-top: 50px;
+    margin-top: 50px;
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+
+
+button{
+    color: chocolate;
+    background: none;
+    outline: none;
+    border: 1px solid chocolate;
+    padding: 5px 15px;
+    margin: 5px !important;
+    cursor: pointer;
+    border-radius: 5px !important;
+    font-size: 17px;
+}
+
+button:hover{
+    background: chocolate;
+    color: #000;
+    border-color:#000 ;
+}
+
+
+
+span{
+    float: right;
+    color: chocolate;
+}
+
+footer span{
+    float: none !important;
+}
+
+header{
+    margin: 10px 0;
+}
+h5{
+    width: 50%;
+    display: inline;
+}
+h5:nth-child(2){
+    padding-left: 130px;
+    color: chocolate;
+}
+
+
+
+
+
+
+
+.menu-item{
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.menu-item img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid chocolate !important;
+    object-fit: cover;
+    float: left
+}
+
+.section-center{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:800px) {
+    .section-center{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu-item img{
+        width: 100% !important;
+        height: 200px;
+        border: 2px solid chocolate !important;
+        object-fit: cover !important;
+        object-position: center;
+        float: left
+    }
+    .menu-item{
+        flex-direction: column;
+    }
+    h5:nth-child(2){
+        padding-left: 130px;
+        margin-left: 130px;
+        color: chocolate;
+    }
+}
+
+.item-info,
+.img{
+    padding: 10px;
+}
+
+
+.buttons-group{
+    text-align: center;
+}

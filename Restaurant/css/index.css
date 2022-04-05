@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comforter+Brush&family=Dancing+Script:wght@500&family=Fira+Sans:wght@100&family=Irish+Grover&family=Josefin+Sans:ital,wght@1,300&family=Luxurious+Roman&family=Poppins:wght@100&family=Road+Rage&family=Roboto&display=swap');
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color :rgb(236, 159, 86) !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+p {
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+li{
+    list-style: none;
+}
+.menu {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(238, 147, 62);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    text-decoration: none;
+   }
+   
+.menu:hover {
+    background-color: rgb(211, 106, 8);
+    box-shadow: 0px 15px 20px rgb(238, 147, 62);
+    color: #fff;
+    transform: translateY(-7px);
+    text-decoration: none;
+   }
+   
+.menu:active {
+    transform: translateY(-1px);
+    text-decoration: none;
+   }
+
+   
+   #scrollUp{
+       display: none;
+   }
+
+   #scrollUp .menu{
+       padding: 10px;
+       border-radius: 50%;
+       position: fixed;
+       bottom: 40px;
+       right: 80px;
+       z-index: 11;
+   }
+   #scrollUp .menu .fa-chevron-up{
+       font-size: 25px;
+   }
+/* ---------------------------------------------------
+    Start Navbar STYLE
+----------------------------------------------------- */
+#Navbar {
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff ;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+    border-bottom: 50px;
+}
+
+                                    /* ---------------------------------------------------
+                                    Start media STYLE
+                                    ----------------------------------------------------- */
+                                    @media screen and (min-width:411px) and (max-width:896px) {
+                                        #Navbar {
+                                            width: 100%;
+                                            left: 0;
+                                            top: 0;
+                                        }
+                                        .nav-onscroll{
+                                            width: 100%;
+                                        }
+                                        .nav-onscroll a{
+                                            padding: 0 !important;
+                                      }
+                                    }
+
+                                    @media screen and (min-width:375px) and (max-width:667px) {
+                                        #Navbar {
+                                            width: 100%;
+                                            left: 0;
+                                            top: 0;
+                                        }
+                                        .nav-onscroll{
+                                            width: 100%;
+                                        }
+                                        .nav-onscroll a{
+                                            padding: 0 !important;
+                                      }
+                                    }
+                                    /* ---------------------------------------------------
+                                    End media STYLE
+                                    ----------------------------------------------------- */
+
+#Navbar img{
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+#Navbar a{
+    text-decoration: none;
+    color: chocolate;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+#Navbar a:hover{
+    color: rgb(255, 106, 0);
+}
+
+
+#Navbar .logo{
+    width: 100%;
+    height: 100px;
+}
+
+.nav-onscroll{
+    background: rgb(236, 159, 86) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+    border-bottom: 50px;
+}
+.nav-onscroll a{
+      color: #fff !important;
+}
+
+.nav-onscroll li .dropdown-menu a{  
+      color: chocolate !important;
+      padding: 5px !important;
+}
+
+.nav-onscroll .sidenav a{
+    color: chocolate !important;
+    padding: 15px !important;
+}
+
+/* ---------------------------------------------------
+    slide navbar style
+----------------------------------------------------- */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color:lightgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: chocolate;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(255, 106, 0);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #openbtn{
+    display: none;
+}
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 1024px) {
+    #Navbar .nav li:not(#openbtn , .Logo) {
+        display: none;
+    }
+    #openbtn{
+        display: block;
+    }
+  }
+
+  .logo-sidnav{
+      width: 100%;
+      height: 100%;
+  }
+
+/* ---------------------------------------------------
+    End Navbar STYLE
+----------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------
+    Start MENU STYLE
+----------------------------------------------------- */
+
+
+#header {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    padding-top: 130px;
+}
+
+
+#header .row .spans{
+    margin-top: 20px;
+    padding: 10px;
+}   
+#header .row .spans span{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px;
+    border-left: 1px solid gray;
+}   
+
+#header .spans span:first-child{
+    border-left: none ;
+}
+
+#header h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.5rem;
+}
+#header a{
+    text-decoration: none;
+}
+
+.header-onscroll{
+    width: 95% !important;
+    margin: auto !important;
+}
+.about-onscroll{
+    width: 95% !important;
+    margin: auto !important;
+}
+
+
+/* ---------------------------------------------------
+    End MENU STYLE
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Start About-us STYLE
+----------------------------------------------------- */
+#About-us{
+    position: relative;
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#About-us p:not(.title){
+    color: #000;
+}
+
+#About-us .container .welcome p{
+    color: chocolate;
+}
+#About-us .container .welcome p,h1{
+    padding: 0;
+    margin: 0;
+}
+#About-us .container .about-content{
+    margin-top: 20px;
+} 
+.About-us-img{
+    width: 100%;
+    height: 100%;
+}
+
+#About-us img{
+    border-radius: 7px;
+}
+#About-us a{
+    color: chocolate;
+    transition: all .4s ease;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+#About-us a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+                                        /* ---------------------------------------------------
+                                    Start media STYLE
+                                    ----------------------------------------------------- */
+                                    @media screen and (min-width:375px) and (max-width:667px) {
+                                        #About-us .special-recipe .row .col-lg-4{
+                                            width: 33.3% !important;
+                                            height: 100% !important;
+                                            object-fit: cover !important;
+                                        }
+                                        #About-us a{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    @media screen and (min-width:411px) and (max-width:896px){
+                                        #About-us .special-recipe .row .col-lg-4{
+                                            width: 33.3% !important;
+                                            height: 100% !important;
+                                            object-fit: cover !important;
+                                        }
+                                        #About-us a{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    @media screen and (min-width:360px) and (max-width:740px) {
+                                        #About-us .special-recipe .row .col-lg-4{
+                                            width: 33.3% !important;
+                                            height: 100% !important;
+                                            object-fit: cover !important;
+                                        }
+                                        #About-us a{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    /* ---------------------------------------------------
+                                    End media STYLE
+                                    ----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    End About-us STYLE
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Start Special Dishes STYLE
+----------------------------------------------------- */
+#Special-Dishes{
+    position: relative;
+    background-image: url(../img/speial-dishes-bc-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 95%;
+    margin: auto;
+    padding: 7%;
+}
+#Special-Dishes .title .Beef{
+    color: chocolate;
+}
+
+
+#Special-Dishes p,
+#Special-Dishes h2,
+#Special-Dishes a{
+    color: #fff;
+    text-decoration: none;
+}
+#Special-Dishes span{
+    color: chocolate;
+    font-weight: 600;
+}
+#Special-Dishes .col-lg-12 span{
+    color: chocolate;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(50, 70, 110, 0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.6;
+  }
+                                    /* ---------------------------------------------------
+                                    Start media STYLE
+                                    ----------------------------------------------------- */
+                                    @media screen and (min-width:375px) and (max-width:667px) {
+                                        #Special-Dishes .special-dishes-text{
+                                            width: 100% !important;
+                                            text-align: left;
+                                            letter-spacing: 1.5px;
+                                        }
+                                        #Special-Dishes .container .row:nth-child(1){
+                                            padding: 0 !important;
+                                            text-align: left !important;
+                                        }
+                                        #Special-Dishes .container .row:nth-child(1) span{
+                                            text-align: left !important;
+                                        }
+
+                                        #Special-Dishes{
+                                            padding: 0;
+                                        }
+                                    }
+                                    /* ---------------------------------------------------
+                                    End media STYLE
+                                    ----------------------------------------------------- */
+/* ---------------------------------------------------
+    End Special Dishes STYLE
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Start menu STYLE
+----------------------------------------------------- */
+#menu{
+    position: relative;
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    padding: 7%;
+}
+
+#menu img{
+    border-radius: 50%;
+    float: left;
+    transition: all .4s ease;
+}
+
+#menu img:hover{
+    transform: scale(1.3);
+}
+#menu p{
+    float: right;
+    padding: 10px;
+    margin-left: 10px;
+    color: #000;
+}
+
+
+#menu .Specialties span{
+    color: chocolate;
+}
+
+@media screen and (max-width:900px) {
+    #menu .container-fluid{
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+#menu .col-lg-12:not(.Specialties){
+    border-bottom: 1px dashed #ccc;
+}
+#menu .container:first-child .col-lg-12{
+    border-bottom: none;
+}
+
+/* ---------------------------------------------------
+    End menu STYLE
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Start Feedback STYLE
+----------------------------------------------------- */
+#Feedback{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    background-image: url(../img/feedback-bc-img-3.jpg);
+    object-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 7%;
+}
+#Feedback span{
+    color: chocolate;
+}
+
+#Feedback .swiffy-slider p{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+#Feedback .fa-quote-left{
+    font-size: 50px !important;
+}
+
+@media screen and (max-width:900px) {
+    #Feedback p{
+        width: 100% !important;
+    }
+}
+/* ---------------------------------------------------
+    End Feedback STYLE
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    Start Team STYLE
+----------------------------------------------------- */
+#Team{
+    position: relative;
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    padding: 7%;
+}
+
+#Team .Card{
+    width: 100%;
+    height: 500px;
+    background: rgb(0, 87, 128);
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
+}
+
+#Team .Card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#Team .content{
+    position: absolute;
+    width: 90%;
+    margin-left: 17px;
+    bottom: 10px;
+    height: 80px;
+    padding: 0.4rem 1.5rem;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+    overflow: hidden;
+    transition: all .4s;
+    text-align: center;
+    color: #000;
+}
+
+#Team .Card:hover .content{
+    height: 150px;
+}
+
+#Team .content p{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+#Team .content a{
+    text-decoration: none;
+    color: chocolate;
+}
+
+#Team .content span{
+    font-size: 1rem;
+    color: chocolate;
+    padding: 5px;
+    transition: all .4s ease;
+}
+#Team .content span:hover i{
+    transform: scale(1.5);
+    color:rgb(238, 147, 62);
+} 
+                                    /* ---------------------------------------------------
+                                    Start media STYLE
+                                    ----------------------------------------------------- */
+                                    @media screen and (min-width:820px) and (max-width:1180px) {
+                                        #Team .Card{
+                                            width: 60%;
+                                            margin: auto;
+                                        }
+                                    }
+                                    @media screen and (min-width:768px) and (max-width:1024px) {
+                                        #Team .Card{
+                                            width: 60%;
+                                            margin: auto;
+                                        }
+                                    }
+                                    /* ---------------------------------------------------
+                                    End media STYLE
+                                    ----------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------
+    End Team STYLE
+----------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------
+    Start Reservation STYLE
+----------------------------------------------------- */
+#Reservation{
+    position: relative;
+    background-image: url(../img/Reservation-bc-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 95%;
+    margin: auto;
+    padding: 7%;
+}
+
+#Reservation .container{
+    background: #fff;
+    padding: 30px;
+    width: 40%;
+    transform: translateX(-70%);
+    box-shadow: 0 0 5px rgb(241, 240, 240);
+}
+
+#Reservation .menu{
+    margin-left: 30%;
+}
+
+
+                                        /* ---------------------------------------------------
+                                    Start media STYLE
+                                    ----------------------------------------------------- */
+                                    @media screen and (min-width:375px) and (max-width:667px) {
+                                        #Reservation .container{
+                                            width: 100% !important;
+                                            transform: translateX(0);
+                                        }
+                                        #Reservation .menu{
+                                            margin-left: 15%;
+                                        }
+                                    }
+                                    @media screen and (min-width:360px) and (max-width:740px) {
+                                        #Reservation .container{
+                                            width: 100% !important;
+                                            transform: translateX(0);
+                                        }
+                                        #Reservation .menu{
+                                            margin-left: 15%;
+                                        }
+                                    }
+                                    @media screen and (min-width:820px) and (max-width:1180px) {
+                                        #Reservation .container{
+                                            width: 100% !important;
+                                            transform: translateX(0);
+                                        }
+                                        #Reservation .menu{
+                                            margin-left: 35%;
+                                        }
+                                    }
+                                    @media screen and (min-width:768px) and (max-width:1024px) {
+                                        #Reservation .container{
+                                            width: 100% !important;
+                                            transform: translateX(0);
+                                        }
+                                        #Reservation .menu{
+                                            margin-left: 35%;
+                                        }
+                                    }
+                                    /* ---------------------------------------------------
+                                    End media STYLE
+                                    ----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    End Reservation STYLE
+----------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------
+    Start Footer STYLE
+----------------------------------------------------- */
+#footer{
+    position: relative;
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    padding: 7%;
+}
+
+#footer ul{
+    padding-left: 0 !important;
+}
+
+#footer .social-media span{
+    font-size: 1rem;
+    color: chocolate;
+    padding: 5px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+#footer .social-media span:hover i{
+    transform: scale(1.5);
+    color:rgb(238, 147, 62);
+}
+
+#footer .menu{
+    margin-left: 25%;
+}
+#footer .copy-right span{
+    color: chocolate;
+}
+/* ---------------------------------------------------
+    End Footer STYLE
+----------------------------------------------------- */
+
+

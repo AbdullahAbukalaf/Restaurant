@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.2/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.2/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="swiffy-slider-main/dist/css/swiffy-slider.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4938406bb3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Resto</title>
+  </head>
+  <body>
+    <div id="scrollUp" onclick="scrollUp()">
+      <a href="#" class="menu"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- **** Start Navbar SECTION **** -->
+    <section id="Navbar">
+      <div class="container" id="fixed-nav">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav d-flex align-items-center justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html">Reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item Logo">
+                <a class="nav-link" href="index.html"
+                  ><img class="logo" src="img/logo.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Team">Team</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown show">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Special-Dishes
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#Beef-Steak-Sause"
+                      >Beef Steak Sause</a
+                    >
+                    <a class="dropdown-item" href="#Salamon-Zucchini"
+                      >Salamon Zucchini</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item" id="openbtn">
+                <a class="nav-link" href="#"
+                  ><span
+                    style="font-size: 30px; cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div id="mySidenav" class="sidenav">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                style="float: right"
+                class="closebtn"
+                onclick="closeNav()"
+                ><i style="font-size: 20px" class="fas fa-times"></i
+              ></a>
+              <a class="nav-link" href="index.html"
+                ><img class="logo-sidnav" src="img/logo.png" alt=""
+              /></a>
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#About-us">About</a>
+              <div class="dropdown show">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Special-Dishes
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#Special-Dishes"
+                    >Beef Steak Sause</a
+                  >
+                  <a class="dropdown-item" href="#Salamon-Zucchini"
+                    >Salamon Zucchini</a
+                  >
+                </div>
+              </div>
+              <a class="nav-link" href="our-menu.html">Menu</a>
+              <a class="nav-link" href="#Team">Team</a>
+              <a class="nav-link" href="#Reservation">Reservation</a>
+              <a class="nav-link" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** End Navbar SECTION **** -->
+
+    <!-- **** Start header SECTION AND SLID SECTION **** -->
+    <section id="header">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="swiffy-slider slider-nav-autoplay slider-nav-autopause"
+              style="height: 100%; width: 100%"
+              data-slider-nav-autoplay-interval="2000"
+            >
+              <!-- Slides -->
+              <ul class="slider-container">
+                <li>
+                  <img src="img/food1.jpg" width="100%" alt="" />
+                </li>
+                <li>
+                  <img src="img/food2.jpg" width="100%" alt="" />
+                </li>
+                <li>
+                  <img src="img/food3.jpg" width="100%" alt="" />
+                </li>
+              </ul>
+              <!-- Navigation Buttons -->
+              <button type="button" class="slider-nav"></button>
+              <button type="button" class="slider-nav slider-nav-next"></button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="wrapper">
+              <h1 data-aos="zoom-in" data-aos-duration="1500">
+                We Love Delicious Food!
+              </h1>
+              <a href="#About-us" class="menu">Exeplor More</a>
+              <div class="spans">
+                <span><i class="fas fa-rocket"></i> Fast Delivery</span>
+                <span><i class="fas fa-leaf"></i> Feash Food</span>
+                <span><i class="fas fa-comment"></i> 24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **** End header SECTION AND SLID SECTION **** -->
+
+    <!-- **** Start About SECTION **** -->
+    <section id="About-us">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              data-aos="zoom-out-right"
+              data-aos-duration="3000"
+              src="img/food2.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="welcome">
+              <p class="title">About</p>
+              <h1>Welcome to Resto</h1>
+            </div>
+            <div class="about-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                est dignissimos sequi reprehenderit commodi autem nam labore non
+                impedit, necessitatibus repellendus quis eius dolorem eaque.
+                Eius, est nemo. Quae, enim.
+              </p>
+            </div>
+            <div class="special-recipe">
+              <h2>Special Recipe</h2>
+              <div class="row">
+                <div
+                  class="col-lg-4 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    class="About-us-img"
+                    src="img/Special Fried Rice.png"
+                    alt=""
+                  />
+                  <a href="#">Fried Rice</a>
+                </div>
+                <div
+                  class="col-lg-4 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    class="About-us-img"
+                    src="img/Special-Barbecue-Chicken.jpg"
+                    alt=""
+                  />
+                  <a href="#">Barbecue Chicken</a>
+                </div>
+                <div
+                  class="col-lg-4 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    class="About-us-img"
+                    src="img/Special-Slow-Cooked-Beef.jpg"
+                    alt=""
+                  />
+                  <a href="#">Slow Cooked Beef</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **** End About SECTION **** -->
+
+    <!-- **** Start Special Dishes SECTION **** -->
+    <section id="Special-Dishes">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center ">
+            <span>Special Dishes</span>
+            <p class="special-dishes-text">
+              laborum excepturi totam. Cumque, maiores praesentium repudiandae
+              dolorum cupiditate alias iure atque!
+            </p>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="wrapper">
+              <div class="title">
+                <h3>
+                  <strong
+                    ><span class="Beef" id="Beef-Steak-Sause"
+                      >Beef Steak Sause</span
+                    ></strong
+                  >
+                </h3>
+              </div>
+              <div class="content mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, qui ipsam accusantium provident aliquid
+                  repellendus iure laboriosam at hic aut modi quam, impedit
+                  inventore? Iste sed nobis maiores placeat eaque?
+                </p>
+              </div>
+              <div>
+                <h2 class="mx-2">50$</h2>
+                <a href="#Reservation" class="menu mb-3">Book a Table</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              src="img/Beef.jpeg"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row m-5">
+          <div class="col-lg-12">
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <img
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              src="img/salmon-zucchini.jpg"
+              width="100%"
+              height="85%"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="wrapper">
+              <div class="title">
+                <h3>
+                  <strong
+                    ><span class="Beef" id="Salamon-Zucchini"
+                      >Salamon Zucchini</span
+                    ></strong
+                  >
+                </h3>
+              </div>
+              <div class="content mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, qui ipsam accusantium provident aliquid
+                  repellendus iure laboriosam at hic aut modi quam, impedit
+                  inventore? Iste sed nobis maiores placeat eaque?
+                </p>
+              </div>
+              <div>
+                <h2 class="mx-2">85$</h2>
+                <a href="#Reservation" class="menu">Book a Table</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **** End Special Dishes SECTION **** -->
+
+    <!-- **** Start Menu SECTION **** -->
+    <section id="menu">
+      <div class="container">
+        <div
+          class="row d-flex flex-row justify-content-center align-items-center"
+        >
+          <div class="col-lg-12 text-center Specialties">
+            <span>Specialties</span>
+            <h1 class="animated bounce">Our Menu</h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid d-flex flex-row justify-content-between align-items-center mt-3"
+      >
+        <div
+          class="row d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-lg-12 p-4">
+            <h1>Breakfast</h1>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#">
+              <img src="img/egg-sandwich.jpg" width="100" height="100" alt="" />
+            </a>
+            <p>Egg Sandwich</p>
+            <p>8$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img src="img/Pancake.jfif" width="100" height="100" alt=""
+            /></a>
+            <p class="px-4">Pancake</p>
+            <p>12$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img
+                src="img/Bacon and egg.jpeg"
+                width="100"
+                height="100"
+                alt=""
+            /></a>
+            <p>Bacon & egg</p>
+            <p>15$</p>
+          </div>
+        </div>
+
+        <div
+          class="row d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-lg-12 p-4">
+            <h1>Dessert</h1>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img src="img/icecream.jpg" width="100" height="100" alt=""
+            /></a>
+            <p>Ice Cream</p>
+            <p>8$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img src="img/Berry-Bar.jpg" width="100" height="100" alt=""
+            /></a>
+            <p>Berry Bar</p>
+            <p>5$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img
+                src="img/Red-Velvet-Swirl-Pound-Cake.jpg"
+                width="100"
+                height="100"
+                alt=""
+            /></a>
+            <p>Velvet Cake</p>
+            <p>6$</p>
+          </div>
+        </div>
+
+        <div
+          class="row d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-lg-12 p-4">
+            <h1>Main Dish</h1>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img
+                src="img/tuna-tomato-rigatoni.jpg"
+                width="100"
+                height="100"
+                alt=""
+            /></a>
+            <p>Tuna Tomato Rigatoni</p>
+            <p>25$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img
+                src="img/Veal chop marsala.jpg"
+                width="100"
+                height="100"
+                alt=""
+            /></a>
+            <p>Veal Chop Marsala</p>
+            <p>75$</p>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-row justify-content-center align-items-center p-3"
+          >
+            <a href="#"
+              ><img src="img/grilled-chicken" width="100" height="100" alt=""
+            /></a>
+            <p>grilled Chicken</p>
+            <p>35$</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div
+          class="row d-flex flex-row justify-content-center align-items-center"
+        >
+          <div class="col-lg-12 text-center Specialties">
+            <a href="our-menu.html" class="menu">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** End Menu SECTION **** -->
+
+    <!-- **** Start Feedback SECTION **** -->
+    <section id="Feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <span>FeedBack</span>
+            <h1>Happy Customer</h1>
+          </div>
+          <div class="col-lg-12 text-center pt-5">
+            <div
+              class="swiffy-slider slider-nav-autoplay slider-nav-autopause"
+              data-slider-nav-autoplay-interval="2000"
+            >
+              <!-- Slides -->
+              <ul class="slider-container">
+                <li>
+                  <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p class="w-50 pt-2 pb-2 m-auto">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit.neque nostrum? Asperiores, consectetur soluta. Dolor
+                      labore repudiandae animi facere dolorem nostrum atque.
+                    </p>
+                  </div>
+                  <div class="pt-3">
+                    <p>Mary Jane</p>
+                    <p>CEO of <span>Unidentity</span></p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p class="w-50 pt-2 pb-2 m-auto">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit.neque nostrum? Asperiores, consectetur soluta. Dolor
+                      labore repudiandae animi facere dolorem nostrum atque.
+                    </p>
+                  </div>
+                  <div class="pt-3">
+                    <p>John Doe</p>
+                    <p>CEO of <span>SiteName</span></p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p class="w-50 pt-2 pb-2 m-auto">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit.neque nostrum? Asperiores, consectetur soluta. Dolor
+                      labore repudiandae animi facere dolorem nostrum atque.
+                    </p>
+                  </div>
+                  <div class="pt-3">
+                    <p>annie leonhart</p>
+                    <p>CEO of <span>SiteName</span></p>
+                  </div>
+                </li>
+              </ul>
+              <!-- Navigation Buttons -->
+              <button type="button" class="slider-nav"></button>
+              <button type="button" class="slider-nav slider-nav-next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** End Feedback SECTION **** -->
+
+    <!-- **** Start Team SECTION **** -->
+    <section id="Team">
+      <div class="container">
+        <div
+          class="row d-flex flex-row justify-content-between align-items-center p-3"
+        >
+          <div class="col-lg-4 p-3">
+            <div
+              class="Card"
+              data-aos="fade-down-right"
+              data-aos-duration="3000"
+            >
+              <img src="img/ceo.jpeg" alt="" />
+              <div class="content">
+                <h2>Aaron Patel</h2>
+                <p>CEO</p>
+                <span
+                  ><a href="#"><i class="fab fa-facebook-f"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-instagram"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-google-plus-g"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-3">
+            <div class="Card" data-aos="fade-down" data-aos-duration="3000">
+              <img src="img/chef-2.jpg" alt="" />
+              <div class="content">
+                <h2>Daniel Tebas</h2>
+                <p>Chef</p>
+                <span
+                  ><a href="#"><i class="fab fa-facebook-f"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-instagram"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-google-plus-g"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-3">
+            <div
+              class="Card"
+              data-aos="fade-down-right"
+              data-aos-duration="3000"
+            >
+              <img src="img/chef1.jpg" alt="" />
+              <div class="content">
+                <h2>Jon Smith</h2>
+                <p>Chef</p>
+                <span
+                  ><a href="#"><i class="fab fa-facebook-f"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-instagram"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-google-plus-g"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** End Team SECTION **** -->
+
+    <!-- **** Start Reservation SECTION **** -->
+    <section id="Reservation">
+      <div class="container">
+        <div class="row">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input class="form-control" type="text" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Your email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group date" data-provide="datepicker">
+              <input
+                class="form-control"
+                type="datetime-local"
+                id="birthdaytime"
+                name="birthdaytime"
+              />
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Phone</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Person</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="menu">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** End Reservation SECTION **** -->
+
+    <!-- **** Start Footer SECTION **** -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 p-5">
+            <h2>Resto</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. omnis
+              cumque dolor natus blanditiis, modi eius aperiam quas officiis
+              ratione temporibus? Obcaecati.
+            </p>
+            <div class="social-media">
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-instagram"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+            </div>
+          </div>
+          <div class="col-lg-4 p-5">
+            <h2>Open Hour's</h2>
+            <ul>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Monday</span>
+                <span>9:00 - 24:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Tuesday</span>
+                <span>9:00 - 24:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Wednesday</span>
+                <span>9:00 - 24:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Thursday</span>
+                <span>9:00 - 24:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Friday</span>
+                <span>9:00 - 02:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Saturday</span>
+                <span>9:00 - 02:00</span>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 p-5">
+            <h2>Newsleter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Your email"
+              />
+            </div>
+            <button type="submit" class="menu">Submet</button>
+          </div>
+          <div class="col-lg-12 text-center">
+            <p class="copy-right">
+              Copyright <span>Abdullah Abu-Khalaf </span>@2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- **** End Footer SECTION **** -->
+
+    <!--Script-->
+    <script src="vanilla-slider.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script src="slider-show-master/slidershow/src/js/slider.js"></script>
+    <script src="swiffy-slider-main/dist/js/swiffy-slider.min.js"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+body{
+    background-image: url(../img/Reservation-bc-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    overflow-anchor:auto;
+    overscroll-behavior: contain;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 25px;
+    width: 30%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -70%) translateX(0);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: auto;
+    overflow-anchor:auto;
+    overscroll-behavior: contain;
+    transition: all .6s linear;
+}
+
+.container-2{
+  transition: all .6s linear;
+  left: 50% !important;
+  transform: translate(-50% , -70%) translateY(-250%);
+}
+
+
+.form-floating{
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-floating .form-control{
+    height: 50px;
+}
+.form-floating label{
+    font-size: 15px !important;
+}
+.form-floating input{
+    font-size: 17px !important;
+    font-weight: 600;
+}
+
+#submit{
+    width: 35%;
+    font-size: 17px;
+    margin: auto;
+    background: #ff7d27;
+    color: #fff;
+}
+
+#submit:hover{
+    color: #fff;
+    background: #e6620a;
+}
+
+h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 15px;
+}
+
+.bi-eye-slash-fill,.bi-eye-fill{
+    right: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.bi-eye-fill{
+    display: none;
+}
+.bi-check-circle-fill{
+    color: green;
+    display: none;
+}
+
+.bi-exclamation-circle-fill{
+    color: red;
+    display: none;
+}
+
+small{
+    color: #fff;
+    font-size: 13px;
+    display: none;
+}
+
+.form-floating.success input{
+    border: 3px solid green
+}
+.form-floating.success .bi-check-circle-fill{
+   display: block;
+}
+.form-floating.error input{
+    border: 3px solid red
+}
+.form-floating.error .bi-check-circle-fill{
+    display: none;
+}
+.form-floating.error .bi-exclamation-circle-fill{
+    display: block;
+}
+.form-floating.error small{
+    display: block;
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 80%;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width:600px) {
+    .container{
+        width: 50% !important;
+        top: 58% !important;
+    }
+    body{
+        min-height:100vh
+    }
+}
+@media screen and (min-width:613px) {
+    .container{
+        width: 30%;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 90% !important;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
+
+
+  p{
+      color: #fff;
+      font-size: 17px;
+  }
+
+  p a{
+      text-decoration: none;
+      color: #ff7d27;
+      font-weight: 600;
+  }
+
+  p a:hover{
+      color: #ff7d27;
+  }
+
+
+#inputGroup-sizing-default i{
+  height: 100%;
+  font-size: 20px;
+  color: #000;
+}  
+
+
+.button-group{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.button-group i{
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.facebook,.google{
+  font-weight: 600;
+  color: #fff;
+}
+
+.facebook{
+  background: blue;
+}
+
+.google{
+  background: rgb(190, 9, 9);
+}
+
+#line{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#line .line{
+  width: 150px;
+  height: 1px !important;
+  background: #fff;
+}
+
+#line span{
+  color: #fff;
+  font-size: 17px;
+  margin: 0 5px;
+}
+
+.position{
+  width: 200px;
+  padding: 10px;
+}
+
+.position a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .4s ease;
+}
+
+.position a:hover{
+  color: #ff7d27;
+}
+
+.position span{
+  color: #fff;
+  font-size: 25px;
+}
+
+.position .active{
+  color: #ff7d27;
+}
